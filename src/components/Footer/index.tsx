@@ -8,7 +8,7 @@ export function Footer(){
             <img src="/image/LogoWithe.svg" alt="" />
             <div>
                 <h4>Endereço:</h4>
-                <p>Av. Ildefonso Smões Lopes, 1156</p>
+                <p>Av. Ildefonso Simões Lopes, 1156</p>
             </div>
 
             <div>
