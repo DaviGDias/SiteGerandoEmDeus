@@ -20,7 +20,7 @@ export function Header() {
 
         <Container>
             <TopInfo>
-                <p>Culto presencial aos domingos, 19h. Demais atividades: consulte nossas redes sociais!</p>
+                <p>Culto todo o domingo às 19h e quartas às 20h. Demais atividades: consulte nossas redes sociais!</p>
                 <div>
                     <Link target='_blank' href='https://www.facebook.com/GerandoemDeus'>
                         <RiFacebookFill size={24}/>
