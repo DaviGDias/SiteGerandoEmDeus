@@ -2,13 +2,14 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
+    width: 100%;
     position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     background:#1e1e1e ;
-    position: sticky;
     flex-direction: column;
+    z-index: 9999;
 `;
 
 export const TopInfo = styled.div`
@@ -21,11 +22,12 @@ export const TopInfo = styled.div`
     text-align: center;
 
     div {
+
         color: white;
         display: flex; 
         align-items: center;
         justify-content: center;
-        padding: 0 1rem 0;
+        padding: 0 1rem ;
         gap: 1rem;
 
         svg{
@@ -113,7 +115,6 @@ export const NavbarContainer = styled.nav<IsOpenProps>`
             background: ${(props) => props.theme['blue-primary']};
             color: ${(props) => props.theme['black-900']};
         }
-
     }
 }
 `;

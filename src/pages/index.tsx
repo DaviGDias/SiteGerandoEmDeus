@@ -1,17 +1,20 @@
+/* eslint-disable @next/next/no-img-element */
 import type { NextPage } from 'next'
 import styled from 'styled-components'
+import { Carrousel } from '../components/Carrousel';
 
 const Container = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 3rem;
+
 `;
 
 const Content = styled.div`
   width: 100%;
-  max-width: 1240px;
-  height: 41vh;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,6 +32,7 @@ const Home: NextPage = () => {
   return (
   <Container>
     <Content>
+      <Carrousel />
         <img src='/image/construction.svg' alt='' />
         <h1>Site em construção</h1>
     </Content>

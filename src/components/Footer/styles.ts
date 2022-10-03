@@ -1,10 +1,12 @@
 import styled from 'styled-components'
 
 export const FooterContainer = styled.footer`
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     background: ${(props) => props.theme['black-900']};
+    position: initial;
 
 `;
 
