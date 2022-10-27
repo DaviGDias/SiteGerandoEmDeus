@@ -20,7 +20,7 @@ export const ContainerSobre = styled.div`
     justify-content: space-between;
 
     img{
-        width: auto;
+        width: 550px;
         filter: drop-shadow(0px 4px 20px #2E2E2E);
         border-radius: 8px;
    
