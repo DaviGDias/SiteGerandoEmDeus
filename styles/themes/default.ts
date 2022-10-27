@@ -1,7 +1,8 @@
 export const defaultTheme = {
   white: '#FFF',
 
-  'blue-primary': '#2B9DB8',
+  'blue-primary': '#00ACC8',
+  'black-200': '#F2F2F2',
   'black-700': '#434343',
   'black-800': '#2D2D2D',
   'black-900': '#171717',

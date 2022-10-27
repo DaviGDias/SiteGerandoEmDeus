@@ -11,11 +11,9 @@ import 'swiper/css/scrollbar';
 
 SwipeCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay])
 
-export function Carrousel(){
-
-    
+export function Carrousel(){ 
     return (
-        <Content>
+        <Content id='inicio'>
         <Swiper
       // install Swiper modules
       modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
@@ -42,6 +40,5 @@ export function Carrousel(){
     </Swiper>
         </Content>
   
-
     )
 } 

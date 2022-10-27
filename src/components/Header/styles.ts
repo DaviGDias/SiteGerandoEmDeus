@@ -1,15 +1,20 @@
+import { Link } from "react-scroll";
 import styled from "styled-components";
 
 
 export const Container = styled.div`
-    width: 100%;
     position: fixed;
+    right: 0;
+    top: 0;
+    position: sticky;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background:#1e1e1e ;
     flex-direction: column;
-    z-index: 9999;
+    z-index: 999;
+    
 `;
 
 export const TopInfo = styled.div`
@@ -30,14 +35,6 @@ export const TopInfo = styled.div`
         padding: 0 1rem ;
         gap: 1rem;
 
-        svg{
-            cursor: pointer;
-
-            &:hover{
-                color: ${(props) => props.theme['blue-primary']};
-            }
-        }
-
     }
 
 p{
@@ -45,6 +42,7 @@ p{
     color: white;
     padding: 1rem 1.5rem;
     line-height: 1.5;
+    font-size: 0.85rem;
 
     @media screen and (max-width: 800px){
         font-size: 0.85rem;
@@ -54,6 +52,7 @@ p{
 
 
 export const HeaderContainer = styled.header`
+    top: 0;
     width: 100%;
     max-width: 1240px;
     display: flex;
@@ -74,9 +73,9 @@ interface IsOpenProps {
 
 export const NavbarContainer = styled.nav<IsOpenProps>`
     display: flex;
+    width: 500px;
     align-items: center;
     justify-content: space-around;
-    gap: 2rem;
 
     @media screen and (max-width: 800px){
         background-color: #1e1e1e;
@@ -92,8 +91,9 @@ export const NavbarContainer = styled.nav<IsOpenProps>`
         transition: 0.5s all ease;
     }
     
-    a{
-    
+`;
+
+export const NavLink = styled(Link)`
         width: 100%;
         height: 100%;
         display: flex;
@@ -116,7 +116,7 @@ export const NavbarContainer = styled.nav<IsOpenProps>`
             color: ${(props) => props.theme['black-900']};
         }
     }
-}
+
 `;
 
 export const MobileIcon = styled.div`
@@ -134,4 +134,17 @@ export const MobileIcon = styled.div`
         }
 
     }
+`;
+
+
+export const LinkSocial = styled.a`
+    color: white;
+
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+
+&:hover{
+    color: ${(props) => props.theme['blue-primary']};
+}
+
 `;

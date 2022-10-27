@@ -7,7 +7,6 @@ export const FooterContainer = styled.footer`
     align-items: center;
     background: ${(props) => props.theme['black-900']};
     position: initial;
-
 `;
 
 export const FooterContent = styled.div`
