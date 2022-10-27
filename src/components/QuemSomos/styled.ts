@@ -20,7 +20,7 @@ export const ContainerSobre = styled.div`
     justify-content: space-between;
 
     img{
-        width: auto;
+        flex: 1;
         filter: drop-shadow(0px 4px 20px #2E2E2E);
         border-radius: 8px;
    
@@ -44,6 +44,6 @@ export const TextP = styled.p`
     font-size: 1rem;
     line-height: 1.5;
     text-align: justify;
-    width: 560px;
+    width: 500px;
     
 `;
